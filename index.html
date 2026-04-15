@@ -37,7 +37,12 @@
         }
         button:hover { background-color: #00ff00; color: #000; box-shadow: 0 0 30px #00ff00; }
 
-        #input-container { display: none; margin-top: 15px; }
+        #input-container { 
+            display: none; 
+            max-width: 800px;
+            margin: 15px auto 0 auto;
+            text-align: left;
+        }
         #user-input {
             background: rgba(0,0,0,0.5); border: none; border-bottom: 2px solid #00ff00;
             color: #00ff00; font-family: inherit; font-size: 16px; outline: none; width: 250px;
@@ -68,7 +73,7 @@
 <body>
 
     <canvas id="matrix-canvas"></canvas>
-    <audio id="bg-music" src="https://docs.google.com/uc?export=download&id=13Zga9DU9avqqQYV2zLVli5cxBASlfsEA" preload="auto" loop></audio>
+    <audio id="bg-music" src="https://storage9.lightaudio.ru/dm/3992243d/2873b4de/Rob%20D%20%E2%80%94%20Clubbed%20To%20Death%20%28Kurayamino%20Mix%29%20%28%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0%29.mp3" preload="auto" loop></audio>
 
     <div id="content-wrapper">
         <div id="start-screen">
