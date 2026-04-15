@@ -227,13 +227,20 @@
                         
                         setTimeout(() => {
                             const btnObj = document.createElement("div");
-                            btnObj.style.marginTop = "20px";
+                            btnObj.style.marginTop = "30px";
                             btnObj.style.textAlign = "center";
-                            btnObj.innerHTML = `<a href="https://online.sberbank.ru/" target="_blank" style="text-decoration:none;">
-                                <button style="background:#0f0; color:#000; font-weight:bold; box-shadow: 0 0 20px #0f0; border-radius: 5px;">[ ОТКРЫТЬ ПРИЛОЖЕНИЕ И ЗАБРАТЬ ПОДАРОК ]</button>
-                            </a>`;
+                            btnObj.innerHTML = `
+                                <a href="https://online.sberbank.ru/" target="_blank" style="text-decoration:none;">
+                                    <button style="background:#0f0; color:#000; font-weight:bold; box-shadow: 0 0 20px #0f0; border-radius: 5px; margin-bottom: 30px;">
+                                        [ ОТКРЫТЬ ПРИЛОЖЕНИЕ И ЗАБРАТЬ ПОДАРОК ]
+                                    </button>
+                                </a>
+                                <br>
+                                <img src="https://c.tenor.com/lV3reXtal-IAAAAd/tenor.gif" 
+                                     onload="window.scrollTo(0, document.body.scrollHeight)" 
+                                     style="max-width: 90%; width: 450px; border-radius: 10px; border: 2px solid #00ff00; box-shadow: 0 0 20px #00ff00;">
+                            `;
                             terminal.appendChild(btnObj);
-                            window.scrollTo(0, document.body.scrollHeight);
                             document.body.style.backgroundColor = "#050505";
                         }, 1000);
 
